@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Cross Browser Testing" parallel="tests">
+  <test thread-count="5" name="chrome Launch">
+	  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="TestNg_Class.ParallelTesting"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Edge launch">
+	  <parameter name="browser" value="Edge"></parameter>
+    <classes>
+      <class name="TestNg_Class.ParallelTesting"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="FireFox launch">
+	  <parameter name="browser" value="FireFox"></parameter>
+    <classes>
+      <class name="TestNg_Class.ParallelTesting"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
